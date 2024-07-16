@@ -1,3 +1,7 @@
-// 5-count
-db.school.countDocuments();
+// 5-count.js
+
+db = connect("localhost:27017/" + db.getMongo().getDB().getName());
+
+var count = db.school.countDocuments();
+print(count);
 

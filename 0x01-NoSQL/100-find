@@ -1,0 +1,6 @@
+// 100-find.js
+
+db = connect("localhost:27017/" + db.getMongo().getDB().getName());
+
+db.school.find({ name: /^Holberton/ }).forEach(printjson);
+

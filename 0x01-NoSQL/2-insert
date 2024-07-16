@@ -1,3 +1,8 @@
-// 2-insert
-db.school.insertOne({ "name": "Holberton school" });
+// 2-insert.js
+
+db = connect("localhost:27017/" + db.getMongo().getDB().getName());
+
+db.school.insert({
+  name: "Holberton school"
+});
 
